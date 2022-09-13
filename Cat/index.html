@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>캔을 따라 집사!</title>
+  <link rel="stylesheet" type="text/css" href="cat.css">
+
+  <!--GameFramework-->
+  <script src = "gfw/FrameCounter.js"></script>
+	<script src = "gfw/GameFramework.js"></script>
+	<script src = "gfw/gfw.js"></script>
+	<script src = "gfw/GraphicObject.js"></script>
+	<script src = "gfw/InputSystem.js"></script>
+	<script src = "gfw/ResourcePreLoader.js"></script>
+	<script src = "gfw/SpriteAnimation.js"></script>
+  <script src = "gfw/Timer.js"></script>
+
+  <!-- 게임에 필요한 창-->
+   <script src = "js/TitleState.js"></script>   <!--게임 타이틀을 나타내는 스크립트-->
+  <script src = "js/PlayState.js"></script>   <!--게임의 상태를 체크하는 스크립트-->
+  <script src = "js/Background.js"></script>   <!--배경 및 충돌처리를 나타내는 스크립트-->
+  <script src = "js/Playground.js"></script>     <!--지형 및 장애물 나타내는 스크립트-->
+  <script src = "js/Player.js"></script>       <!--플레이어의 정보를 나타내는 스크립트-->
+</head>
+
+<body>
+  <!--배경 이미지 나타남-->
+  <canvas id = "GameCanvas" width="800" height="600" style="position: absolute; top:25px; left:25px"></canvas>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <form method="post">
+
+        아이디 <input type="text" name="id"><br/><br/>
+        패스워드 <input type="text" name="password"><br/><br/>
+
+        <input type="submit" formaction="php/find.php" name ="sm" value="제출">
+        <input type="submit" formaction="php/join.php" name="join" value="회원가입">
+        <br/><br/>
+      </form>
+      <button id="close">닫기</button>
+    </div>
+  </div>
+
+  <script src="js/loginM.js"></script>
+
+</body>
+
+</html>
